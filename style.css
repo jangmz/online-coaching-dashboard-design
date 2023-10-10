@@ -1,0 +1,36 @@
+.container {
+    width: 100vw;
+    display: grid;
+    /* 2x2 grid */
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+.dashboard {
+    background-color: lightseagreen;
+    color: white;
+    width: 20vw;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+.heading-container {
+    border: 1px solid darkgray;
+    height: auto;
+    /*width: auto;*/
+
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+}
+.body-container {
+    background-color: lightgray;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+.clients-cards {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+
+    display: flex;
+}
