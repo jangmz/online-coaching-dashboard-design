@@ -6,12 +6,12 @@ body {
     width: auto;
     display: grid;
     /* 2x2 grid */
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: auto 4fr;
     grid-template-rows: 1fr 5fr;
 }
 /* === DASHBOARD === */
 .dashboard {
-    background-color: lightseagreen;
+    background-color: rgb(53, 74, 87);
     color: white;
     width: 250px;
     padding: 0;
@@ -52,6 +52,10 @@ body {
     text-decoration: none;
     color: inherit;
     padding: 0;
+}
+.icon {
+    height: 25px;
+    width: 25px;
 }
 
 /* === HEADING === */
@@ -106,9 +110,15 @@ body {
     grid-template-columns: 4fr 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
-.clients-cards {
+.clients {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, clamp(300px, 20%, 400px)); /* fix so it auto resizes */
+    gap: 20px;
+    justify-content: center;
+}
+.client-card {
+    border: 1px solid black;
 }
