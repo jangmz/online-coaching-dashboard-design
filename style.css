@@ -89,7 +89,8 @@ body {
 /* === HEADING === */
 .heading-container {
     border: 1px solid darkgray;
-    height: auto;
+    padding: 20px 30px;
+    /*height: auto;*/
     /*width: auto;*/
 
     grid-column: 2 / -1;
@@ -97,11 +98,19 @@ body {
 
     /* 2 cols, 2 rows */
     display: grid;
-    grid-template: repeat(2, auto) / 3fr 1fr;
+    grid-template: repeat(2, auto) / 2fr 1fr;
 }
 .heading-search {
-    justify-self: center;
-    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.heading-search input {
+    width: 70%;
+    height: 30px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 12px;
 }
 .heading-profile {
     display: grid;
