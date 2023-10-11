@@ -109,6 +109,11 @@ body {
     align-items: center;
     gap: 5px;
 }
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+}
 .heading-greet {
     display: grid;
     grid-template: repeat(2, auto) / repeat(2, auto);
