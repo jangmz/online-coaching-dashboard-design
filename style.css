@@ -115,28 +115,65 @@ body {
 .heading-profile {
     display: grid;
     grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
     align-items: center;
-    gap: 5px;
+
+    padding: 0 10%;
+}
+.heading-profile .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .profile-picture {
     width: 40px;
     height: 40px;
     border-radius: 50%; 
 }
-.heading-greet {
+/*.heading-greet {
     display: grid;
-    grid-template: repeat(2, auto) / repeat(2, auto);
+    grid-template: repeat(2, auto) / auto 1fr;
 }
 .heading-greet img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 20px;
+
     grid-row: 1 / 3;
     grid-column: 1 / 2;
+    align-self: center;
+    justify-self: center;
 }
+
 .heading-greet img,
 .heading-greet h6,
 .heading-greet h2 {
     padding: 0;
     margin: 0;
 }
+.heading-greet .greet {
+    align-self: center;
+}*/
+
+.heading-greet {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.heading-greet .greet {
+    display: flex;
+    flex-direction: column;
+}
+.heading-greet img {
+    width: 60px;
+    height: 60px;
+}
+.heading-greet .greet h6,
+.heading-greet .greet h2 {
+    margin: 0;
+}
+
 .heading-btns {
     display: grid;
     grid-template-columns: repeat(3, auto);
