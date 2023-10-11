@@ -29,12 +29,19 @@ body {
     padding: 0;
 }
 .logo {
-    margin: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .logo h1 {
-    margin: 0;
+    /* margin: 0;*/
 }
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
 .menu {
     padding: 0;
     grid-row: 2 / 3;
@@ -66,7 +73,7 @@ body {
 }
 .menu-item {
     /*margin: 15px 20px;*/
-    margin: 0 20px;
+    margin: 0 25px;
 }
 .menu-item p {
     margin: 0;
