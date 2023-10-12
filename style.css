@@ -118,6 +118,9 @@ body {
 
     padding: 0 10%;
 }
+.heading-profile img:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
 .heading-profile .user {
     display: flex;
     align-items: center;
@@ -194,15 +197,24 @@ body {
 
 /* === BODY === */
 .body-container {
-    background-color: #71717a;
+    background-color: #9f9fac;
 
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
 }
+
+.body-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    justify-self: center;
+    text-transform: uppercase;
+}
+
 .clients {
     grid-column: 1 / 2;
-    grid-row: 1 / -1;
+    grid-row: 2 / -1;
 
     display: grid;
     /* ==== FIX HERE ==== */
@@ -233,4 +245,30 @@ body {
 }
 .card-icons .icon:hover {
     cursor: pointer;
+}
+
+.body-side-title {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+
+    background-color: rgb(223, 156, 55);
+    text-align: center;
+}
+.recent-workouts {
+    grid-column: 2 / -1;
+
+    background-color: rgb(223, 156, 55);
+}
+.recent-workouts .highlight {
+    background-color: #d4d4d8;
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    padding: 3px 0;
+    padding-left: 20px;
+    margin: 0 5px;
+    margin-bottom: 5px;
+}
+.highlight:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
 }
