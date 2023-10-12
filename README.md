@@ -1,7 +1,7 @@
 <h1>Front End Online Coaching Dashboard</h1>
 
 ## Preview
-Check the website Sign-Up form [HERE](https://jangmz.github.io/online-coaching-dashboard-design/)
+Check the page [HERE](https://jangmz.github.io/online-coaching-dashboard-design/)
 
 ## Built with
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)   
